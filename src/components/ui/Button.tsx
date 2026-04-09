@@ -11,7 +11,7 @@ onclick?:()=>void
 }
 function Button({children,className,variant="primary",disabled,to,onclick}:ButtonProps) {
   const styles={
-primary:"border-gray-500 border-1  rounded-xl",
+primary:"",
 secondary:"rounded-[50%] w-26 h-26"
   }
   const base ="px-4 py-2  text-white"
