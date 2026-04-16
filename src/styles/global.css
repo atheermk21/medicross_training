@@ -1,5 +1,15 @@
 @import "tailwindcss";
 :root{
 --color-bg: #101D33;
+--primary-color: #ffcc53;
+  --secondary-color: #051b2e;
+  --third-color: #68747a;
+  --four-color: #09243c;
+  --body_bg-color: #fff;
+  --primary-color-rgb: 255,204,83;
+  --secondary-color-rgb: 5,27,46;
+  --third-color-rgb: 104,116,122;
+  --four-color-rgb: 9,36,60;
+  --body_bg-color-rgb: 255,255,255;
 
 }
