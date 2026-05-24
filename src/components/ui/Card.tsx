@@ -1,10 +1,10 @@
 import type { ReactNode } from "react";
 import Hero from "../../pages/home/sections/Hero";
-import Services from "../../pages/home/sections/Services"
+import Services from "../../pages/home/sections/Services";
 
 interface CardProps{
     children:ReactNode;
-    className?:string;
+    className?:string;           
 
 }
 

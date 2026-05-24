@@ -5,5 +5,6 @@ export const ROUTES ={
     CONTACT:"/contact",
     // features pages
     DOCTORS:"/doctors",
+    SERVICES:"/services"
 
 }

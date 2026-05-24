@@ -108,14 +108,14 @@ link:""
 }];
     const services = () => {
         return(
-            <section className="py-16 ">
-                <div className="container mx-auto px-4">
-                    <div className="grid gride-cols-2 lg:grid-cols-4 gap-6">
-                        {items.map((item) =>( 
-                       <Card key={item.id} className={`${item.bg} h-[350px] flex-col justify-center relative shadow-md
-                       transition-transform hover:scale-105 overflow-hidden`}>
-{item.isImage ?(
-    <img src={item.image} alt="Services" className="w-full h-full object-cover rounded-xl" />):(
+        <section className="py-16 ">
+        <div className="container mx-auto px-4">
+        <div className="grid gride-cols-2 lg:grid-cols-4 gap-6">
+         {items.map((item) =>( 
+        <Card key={item.id} className={`${item.bg} h-[350px] flex-col justify-center relative shadow-md
+          transition-transform hover:scale-105 overflow-hidden`}>
+        {item.isImage ?(
+        <img src={item.image} alt="Services" className="w-full h-full object-cover rounded-xl" />):(
         <div className={`p-8 ${item.textColor}`}>
             <h2 className="text-5xl font-bold mb-4 tracking-tight leading-thigt">{item.title}
                

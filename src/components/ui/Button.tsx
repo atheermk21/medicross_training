@@ -1,20 +1,21 @@
-import React, { type ReactNode } from 'react'
-import { Link } from 'react-router-dom'
+import React, { type ReactNode } from 'react';
+import { Link } from 'react-router-dom';
 interface ButtonProps{
 children:ReactNode,
-className:string,
+className?:string,
 variant?:"primary"|"secondary",
 disabled?:boolean,
 to?:string,
-onclick?:()=>void
+onClick?:()=>void,
+type?:string
 
 }
-function Button({children,className,variant="primary",disabled,to,onclick}:ButtonProps) {
+function Button({ type ,children,className,variant="primary",disabled,to,onClick}:ButtonProps) {
   const styles={
-primary:"",
-secondary:"rounded-[50%] w-26 h-26"
+primary:"text-black inline-flex justify-center items-center text-center",
+secondary:""
   }
-  const base ="px-4 py-2  text-white"
+  const base =" text-black gap-2 justify-center items-center py-2 px-4"
   if(to){
   return(
     <Link className={`${base} ${className} ${styles[variant]}`}  to={to}>
@@ -25,7 +26,7 @@ secondary:"rounded-[50%] w-26 h-26"
 
   return (
     <div>
-      <button onClick={onclick} disabled={disabled} className={`${base} ${className} ${styles[variant]}`}>{children}</button>
+      <button onClick={onClick} disabled={disabled} className={`${base} ${className} ${styles[variant]}`}>{children}</button>
     </div>
   )
 }

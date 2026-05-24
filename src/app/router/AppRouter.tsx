@@ -4,6 +4,7 @@ import Home from '../../pages/home/Home';
 import About from '../../pages/about/About';
 import Contact from '../../pages/contact/Contact';
 import { ROUTES } from '../../constants/router';
+import Services from '../../pages/services/Sevices';
 import DoctorsPage from '../../features/doctors/pages/DoctorsPage';
 // import DoctorDetails from '../../features/doctors/pages/DoctorDetails';
 import MainLayout from '../../components/layout/MainLayout';
@@ -19,6 +20,7 @@ const AppRouter: React.FC= () => {
     <Route path={ROUTES.HOME} element={<Home />}/>
     <Route path={ROUTES.ABOUT} element ={<About/>}/>
     <Route path={ROUTES.CONTACT} element={<Contact/>}/>
+    <Route path={ROUTES.SERVICES} element={<Services/>}/>
     {/* features page */}
     <Route path={ROUTES.DOCTORS} element={<DoctorsPage/>}/>
     {/* <Route path={ROUTES.DOCTOR_DETAILS} element={<DoctorDetails/>}/> */}
