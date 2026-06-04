@@ -1,12 +1,12 @@
-import img5 from "../../assets/images/sv16s.webp"
-import img6 from "../../assets/images/sv14.webp"
+import img5 from "/src/assets/images/h5-2.webp"
+import img6 from "/src/assets/images/sv3-736x596.webp"
 import img1 from "/src/assets/images/h5-6.webp"
 import img2 from "/src/assets/images/h5-7.webp"
 import img3 from "/src/assets/images/sv4-736x596.webp"
 import img4 from "/src/assets/images/h5-9.webp"
 
-export const HomeContents ={
- ServiceData:[
+
+ export const items=[
 {
 id:1,
 title:"",
@@ -91,5 +91,12 @@ link:""
     isImage:true,
     link:""
 }]
-}
+
+ export const slidesData =[
+  {id:1,title:"Your Journey to Exclusive Wellness Begins Here.", text:"The healthcare arena there was a felt need of developing new as well as upgrading the existing functioning and processes, consequently develop an institution supported with necessary.", 
+    subtitle:"Medicross Health Care Center",img:img5},
+  {id:1,title:"Having A Good Health In Your Best Investment", text:"The healthcare arena there was a felt need of developing new as well as upgrading the existing functioning and processes, consequently develop an institution supported with necessary.",
+     subtitle:"Medicross Health Care Center",img:img6}
+]
+
 

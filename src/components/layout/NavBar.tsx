@@ -18,7 +18,7 @@ function NavBar() {
     }
   
   return (
-    <nav className="sticky  bg-[#0A1A2E]  px-10 py-4 flex justify-between items-center">
+    <nav className="sticky  bg-[var(--color-bg)]   px-10 py-4 flex justify-between items-center">
     
       <div className="container  mx-auto flex justify-between items-center p-4">
    
@@ -35,7 +35,7 @@ function NavBar() {
       <span className="cursor-pointer flex items-center gap-2 mr-75"></span><IoSearchSharp/> </div>
           <div className="hidden md:flex">
 <Button  to="/doctors"  className=" 
-       bg-yellow-400 h-15 rounded-xl font-medium hover:bg-yellow-300 transition " variant="primary"><span>Book An Appointment</span><FiArrowRight/></Button>
+       bg-[var(--primary-color)] h-15 rounded-xl font-medium hover:bg-yellow-300 transition " variant="primary"><span>Book An Appointment</span><FiArrowRight/></Button>
       </div></div>
     <button className=" md:hidden bg-yellow 400 " onClick={handleMenuClick}>
       <FaAlignRight/>
