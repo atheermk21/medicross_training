@@ -132,13 +132,16 @@ function AboutDoctor() {
         </div>
         <div className='max-w-5xl mx-auto mt-14 grid md:grid-cols-2 gap-6 flex items-center justify-center'>
       
-      <select className=' h-15 text-gray-500  rounded-2xl border border-gray-200 px-5' onChange={(e)=>setSelect(e.target.value)} name="" id="">
+      <select className=' h-15 text-gray-500  rounded-2xl border border-gray-200 px-5' onChange={(e)=>setSelect(e.target.value)} name="S" id="">
       <option  value="">Filter All Departments</option>
       <option  value="Internal Medicine Department">Internal Medicine Department</option>
       <option value="Neurology Department ">Neurology Department </option>
       <option value="Surgical Department">Surgical Department </option>
       </select>
-      <input className='h-15 rounded-2xl border border-gray-200 px-5' placeholder='Search' type="text" value={search} onChange={(e)=>setSearch(e.target.value)}/>
+      <form action="">
+      <input className='h-15 rounded-2xl border border-gray-200 px-5' placeholder='Search' type="text" 
+      value={search} onChange={(e)=>setSearch(e.target.value)} />
+      <button></button></form>
      </div>
       <div className='max-w-7xl  mx-auto mt-20 grid sm:grid-cols-2 lg:grid-cols-4 gap-5'>
       {displayedDoctors.map((doctor) =>(

@@ -1,7 +1,7 @@
-import React from 'react'
+
 import heroBg from "../../../assets/images/cm6.webp"
-import Button from '../../../components/ui/Button'
-import { FaAlignRight, FaArrowRightLong } from 'react-icons/fa6'
+
+import {  FaArrowRightLong } from 'react-icons/fa6'
 import { BsTelephoneInbound } from 'react-icons/bs'
 
 function Hero() {
