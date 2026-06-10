@@ -12,7 +12,7 @@ function Slider<T>({renderSlider, slides, dot}: SliderProps<T>){
     const[current ,setCurrent]=useState(0);
     return(
         <div>
-        <div className="text-[var(--color-text)] lg:flex absolute mt-5 left-0 top-1/2 -translate-y-1/2-flex flex-col ms-3 ">
+        <div className="text-[var(--text-primary)] lg:flex absolute mt-5 left-0 top-1/2 -translate-y-1/2-flex flex-col ms-3 ">
  <button className="hidden lg:flex cursor-pointer h-18 w-18 flex justify-center items-center mb-5  p-4 bg-white/10 rounded-full  hover:bg-yellow-300  "
   onClick={()=>current===0?setCurrent(slides.length-1):setCurrent(current-1)}><FiArrowRight size={20}/></button>
  <button className="hidden lg:flex cursor-pointer h-18 w-18 flex  justify-center items-center mb-5  p-4 bg-white/10 rounded-full  hover:bg-yellow-300  " 
